@@ -1,9 +1,22 @@
-# Discord breeding-channel ingestion
+# NICK-701: this repo holds ONLY the markdown data (project.md + plants/<ID>.md).
+# Everything below is live working state or tooling that must not land in the data repo.
 
-/photos
-*.tar.gz
-test.html
-var/
-real-channel.json
+# Legacy JSON tracker (superseded by plants/*.md)
+tracker.json
+
+# Live working directories
+cache/
+photo_staging/
+
+# Legacy dashboard: a separate checkout of joeydouglas/paloma-coma-dashboard-legacy
+dashboard/
+
+# Per-project tooling (lives in the Hermes breeding dir, not the data repo)
+generate_dashboard.py
+monitor_breeding_notes.py
+photo_handler.py
+
+# Python / scratch
 __pycache__/
 *.py[cod]
+.save_tracker-staging-*
